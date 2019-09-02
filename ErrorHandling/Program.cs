@@ -13,6 +13,11 @@ namespace ErrorHandling
             Game game = new Game();
             game.Initialize();
             game.Do();
+
+            while (true)
+            {
+                game.Update();
+            }
         }
     }
 
@@ -21,9 +26,9 @@ namespace ErrorHandling
         Monsters_Cohort monsterCohort = new Monsters_Cohort(1, "02/09/2019");
         public void Initialize()
         {
-            for (int i = 0; i < 5; i++)
+            for (int i = 1; i <= 5; i++)
             {
-                Monster_Student ms = new Monster_Student(i);
+                Monster_Student ms = new Monster_Student(i, String.Format("Ability{0}",i));
                 monsterCohort.AddStudent(ms);
             }
         }
@@ -31,6 +36,11 @@ namespace ErrorHandling
         public void Do()
         {
             monsterCohort.ListStudent();
+        }
+
+        public void Update()
+        {
+
         }
     }
 
