@@ -70,6 +70,12 @@ namespace ErrorHandling
         {
             this.id = id;
         }
+
+        public Monster_Student(int id, String specAbility)
+        {
+            this.id = id;
+            this.specialAbility = specAbility;
+        }
         public Monster_Student(int id, string eyes, string hair, float scaryLevel, string specAbility)
         {
             this.id = id;
