@@ -25,5 +25,16 @@ namespace ErrorHandling
 
             public void Scream() { }
         }
+
+        class Monsters_Cohort
+        {
+            int subject;
+            string startDate;
+            List<Monster_Student> Students;
+            public void AddStudent(Monster_Student ms) { }
+            public void ListStudent() { }
+            public void ImportStudent() { }
+
+        }
     }
 }
