@@ -92,7 +92,17 @@ namespace ErrorHandling
     class Monsters_Cohort
     {
         int subject;
+        public int Subject
+        {
+            get { return subject; }
+            set { subject = value; }
+        }
         string startDate;
+        string StartDate
+        {
+            get { return startDate; }
+            set { startDate = value; }
+        }
         List<Monster_Student> students = new List<Monster_Student>();
 
         public Monsters_Cohort(int id, string start)
