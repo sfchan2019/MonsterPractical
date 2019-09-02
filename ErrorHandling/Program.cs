@@ -18,9 +18,9 @@ namespace ErrorHandling
 
     class Game
     {
+        Monsters_Cohort monsterCohort = new Monsters_Cohort(1, "02/09/2019");
         public void Initialize()
         {
-            Monsters_Cohort monsterCohort = new Monsters_Cohort();
             for (int i = 0; i < 5; i++)
             {
                 Monster_Student ms = new Monster_Student(i);
@@ -30,7 +30,7 @@ namespace ErrorHandling
 
         public void Do()
         {
-
+            monsterCohort.ListStudent();
         }
     }
 
@@ -95,6 +95,11 @@ namespace ErrorHandling
         string startDate;
         List<Monster_Student> students = new List<Monster_Student>();
 
+        public Monsters_Cohort(int id, string start)
+        {
+            this.subject = id;
+            this.startDate = start;
+        }
         public void AddStudent(Monster_Student ms)
         {
             students.Add(ms);
@@ -103,7 +108,7 @@ namespace ErrorHandling
         {
             foreach (Monster_Student ms in students)
             {
-                Console.WriteLine(ms.Id.ToString() + ms.SpecialAbility);
+                Console.WriteLine(String.Format("Id: {0}, {1}", ms.Id, ms.SpecialAbility));
             }
         }
         public void ImportStudent()

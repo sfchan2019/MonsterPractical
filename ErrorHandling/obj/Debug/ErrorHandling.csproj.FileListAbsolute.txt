@@ -1,0 +1,7 @@
+C:\Users\Seng Fai Chan\Documents\Visual Studio Project\Engineering40\Week4\Day1\ErrorHandling\ErrorHandling\bin\Debug\ErrorHandling.exe.config
+C:\Users\Seng Fai Chan\Documents\Visual Studio Project\Engineering40\Week4\Day1\ErrorHandling\ErrorHandling\bin\Debug\ErrorHandling.exe
+C:\Users\Seng Fai Chan\Documents\Visual Studio Project\Engineering40\Week4\Day1\ErrorHandling\ErrorHandling\bin\Debug\ErrorHandling.pdb
+C:\Users\Seng Fai Chan\Documents\Visual Studio Project\Engineering40\Week4\Day1\ErrorHandling\ErrorHandling\obj\Debug\ErrorHandling.csprojAssemblyReference.cache
+C:\Users\Seng Fai Chan\Documents\Visual Studio Project\Engineering40\Week4\Day1\ErrorHandling\ErrorHandling\obj\Debug\ErrorHandling.csproj.CoreCompileInputs.cache
+C:\Users\Seng Fai Chan\Documents\Visual Studio Project\Engineering40\Week4\Day1\ErrorHandling\ErrorHandling\obj\Debug\ErrorHandling.exe
+C:\Users\Seng Fai Chan\Documents\Visual Studio Project\Engineering40\Week4\Day1\ErrorHandling\ErrorHandling\obj\Debug\ErrorHandling.pdb
