@@ -12,12 +12,6 @@ namespace ErrorHandling
         {
             Game game = new Game();
             game.Initialize();
-            game.Do();
-
-            while (true)
-            {
-                game.Update();
-            }
         }
     }
 
@@ -31,21 +25,19 @@ namespace ErrorHandling
                 Monster_Student ms = new Monster_Student(i, String.Format("Ability{0}",i));
                 monsterCohort.AddStudent(ms);
             }
+
+            DoSomething();
         }
 
-        public void Do()
+        public void DoSomething()
         {
             monsterCohort.ListStudent();
-        }
-
-        public void Update()
-        {
-
         }
     }
 
     class Monster_Student
     {
+        #region Fields
         int id;
         public int Id
         {
@@ -75,12 +67,13 @@ namespace ErrorHandling
             get { return specialAbility; }
             set { specialAbility = value; }
         }
+        #endregion
 
         public Monster_Student(int id)
         {
             this.id = id;
         }
-
+        
         public Monster_Student(int id, String specAbility)
         {
             this.id = id;
@@ -107,6 +100,7 @@ namespace ErrorHandling
 
     class Monsters_Cohort
     {
+        #region Fields
         int subject;
         public int Subject
         {
@@ -120,6 +114,7 @@ namespace ErrorHandling
             set { startDate = value; }
         }
         List<Monster_Student> students = new List<Monster_Student>();
+        #endregion
 
         public Monsters_Cohort(int id, string start)
         {
@@ -136,10 +131,6 @@ namespace ErrorHandling
             {
                 Console.WriteLine(String.Format("Id: {0}, {1}", ms.Id, ms.SpecialAbility));
             }
-        }
-        public void ImportStudent()
-        {
-
         }
     }
 }
